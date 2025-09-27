@@ -1,5 +1,9 @@
 package gnet
 
+import (
+	"github.com/FFForeverCode/TCP-Servce/giface"
+)
+
 //server服务器实现
 
 type Server struct {
@@ -24,3 +28,18 @@ func (s *Server) Stop() {}
 
 // ListenAndServe 监听server端口/**
 func (s *Server) ListenAndServe() {}
+
+func (s *Server) Server() {
+	s.Start()
+	//TODO 服务器已开启，执行其他业务
+}
+
+// NewServer 创建一个server句柄
+func NewServer(name string) giface.IServer {
+	return &Server{
+		Name:      name,
+		IPVersion: "tcp4",
+		IP:        "0.0.0.0",
+		Port:      8999,
+	}
+}

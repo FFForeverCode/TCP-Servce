@@ -1,4 +1,4 @@
-module cxf
+module github.com/FFForeverCode/TCP-Servce
 
 go 1.24.0
 
