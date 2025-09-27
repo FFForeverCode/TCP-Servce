@@ -1,7 +1,7 @@
 package gnet
 
 import (
-	"github.com/FFForeverCode/TCP-Servce/giface"
+	"github.com/FFForeverCode/ginx/ginx/giface"
 )
 
 //server服务器实现
