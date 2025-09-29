@@ -5,8 +5,8 @@ package giface
  * 定义：服务器启动、监听、停止等方法
  */
 type IServer interface {
-	//Server server执行方法
-	Server()
+	//Serve server执行方法
+	Serve()
 	// Start 开启服务器
 	Start()
 	// ListenAndServe 监听server 端口
